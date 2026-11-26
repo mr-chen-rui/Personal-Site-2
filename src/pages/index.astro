@@ -1,0 +1,58 @@
+---
+import Banner from "../Components/Banner.astro"
+import Hbox from "../Components/Hbox.astro";
+import Panel from "../Components/Panel.astro"
+import Footer from "../Components/Footer.astro"
+import "../styles.css"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Mr-Chen-Rui</title>
+	</head>
+	<Banner/>
+	<body>
+		<Hbox>
+			<Panel>
+				<h3>
+					Hello! :3
+				</h3>
+				<hr>
+				I am a coder, swimmer, 3D modeler, and reader who is against the use of generative AI in coding. 
+
+				<h3>
+					About
+				</h3>
+				<hr>
+
+				<h3>
+					Tech Stack
+				</h3>
+				<hr>
+				I often use JS, HTML, and CSS, although Astro is my favorite framework. I also use Vite as a bundler for web development.
+				<br>
+				I can use Godot and Unity, and can code in Java, Python, and C#. Currently, I'm learning C and C++.
+			</Panel>
+			<Panel>
+				hello
+			</Panel>
+		</Hbox>
+		<Footer/>
+	</body>
+</html>
+<!-- Annoying thing is that in css you must explicitly state height of the parent element if you want 100% height -->
+<style scoped>
+body{  
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+html{
+	height:1px
+}
+
+</style>

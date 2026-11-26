@@ -1,0 +1,23 @@
+:root {
+    --background-light: #545e75ff;
+    --link: #9ae19dff;
+    --emphasis: #a7ccedff;
+    --background-dark: #304d6dff;
+    --steel-blue: #82a0bcff;
+
+
+    
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    color: white;
+}
+html{
+    min-height: 100%;
+    min-width: 100%;
+    background-image: linear-gradient(to top right, var(--background-dark), var(--background-light));
+}
+a{
+    color: var(--link);
+}
+a:hover{
+    color: var(--emphasis);
+}

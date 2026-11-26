@@ -1,0 +1,17 @@
+---
+import "../styles.css"
+---
+
+<div class="Hbox">
+    <slot />
+</div>
+
+<style scoped>
+.Hbox{
+    margin-top: 1rem;
+    display: inline-grid;
+    grid-template-columns: 2fr 1fr;
+    height: max-content;
+}
+
+</style>
